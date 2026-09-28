@@ -84,11 +84,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1          &kp N2          &kp N3        &kp N4                    &kp N5                                                            &kp N6  &kp N7           &kp N8        &kp N9        &kp N0                   &kp MINUS
-&kp TAB    &kp Q           &kp W           &kp E         &kp R                     &kp T                                                             &kp Y   &kp U            &kp I         &kp O         &kp P                    &kp BSPC
-&kp ESC    &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D  &mt LCTRL F               &kp G                                                             &kp H   &mt RCTRL J      &mt RSHIFT K  &mt LALT L    &mt RIGHT_GUI SEMICOLON  &kp SQT
-&kp LCTRL  &kp Z           &kp X           &kp C         &kp V                     &kp B   &kp C_MUTE                    &kp C_PLAY_PAUSE            &kp N   &kp M            &kp COMMA     &kp DOT       &kp FSLH                 &kp RCTRL
-                           &kp LSHIFT      &kp LALT      &mt LS(LA(LCTRL)) DELETE  &mo 1   &mt LS(LA(LC(LGUI))) SPACE    &mt LA(LC(LS(LGUI))) ENTER  &mo 2   &kp RIGHT_SHIFT  &kp RALT      &kp LEFT_GUI
+&kp GRAVE              &kp N1          &kp N2          &kp N3        &kp N4                    &kp N5                                                                            &kp N6                  &kp N7           &kp N8        &kp N9        &kp N0                   &kp MINUS
+&kp TAB                &kp Q           &kp W           &kp E         &kp R                     &kp T                                                                             &kp Y                   &kp U            &kp I         &kp O         &kp P                    &kp BSPC
+&mt LS(LA(LCTRL)) ESC  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LSHIFT D  &mt LCTRL F               &mt LA(LS(LC(LGUI))) G                                                            &mt LA(LS(LC(LGUI))) H  &mt RCTRL J      &mt RSHIFT K  &mt LALT L    &mt RIGHT_GUI SEMICOLON  &mt LS(LA(LCTRL)) SQT
+&kp LCTRL              &kp Z           &kp X           &kp C         &kp V                     &kp B                   &kp C_MUTE                    &kp C_PLAY_PAUSE            &kp N                   &kp M            &kp COMMA     &kp DOT       &kp FSLH                 &kp RCTRL
+                                       &kp LSHIFT      &kp LALT      &mt LS(LA(LCTRL)) DELETE  &mo 1                   &mt LS(LA(LC(LGUI))) SPACE    &mt LA(LC(LS(LGUI))) ENTER  &mo 2                   &kp RIGHT_SHIFT  &kp RALT      &kp LEFT_GUI
             >;
 
             sensor-bindings =
@@ -107,11 +107,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F12  &kp F1           &kp F2           &kp F3         &kp F4        &kp F5                    &kp F6  &kp F7        &kp F8         &kp F9            &kp F10      &kp F11
-&trans   &kp GRAVE        &none            &none          &none         &none                     &none   &kp LBKT      &kp RBKT       &kp MINUS         &kp EQUAL    &trans
-&trans   &mt LEFT_GUI N1  &mt LEFT_ALT N2  &mt LSHIFT N3  &mt LCTRL N4  &kp N5                    &kp N6  &mt RCTRL N7  &mt RSHIFT N8  &mt RIGHT_ALT N9  &mt RGUI N0  &trans
-&trans   &kp BACKSLASH    &none            &none          &none         &none   &trans    &trans  &none   &none         &trans         &trans            &trans       &trans
-                          &trans           &trans         &trans        &trans  &trans    &trans  &mo 3   &trans        &trans         &trans
+&kp F12  &kp F1           &kp F2           &kp F3         &kp F4        &kp F5                                     &kp F6                   &kp F7        &kp F8         &kp F9            &kp F10      &kp F11
+&trans   &kp GRAVE        &none            &none          &none         &none                                      &none                    &kp LBKT      &kp RBKT       &kp MINUS         &kp EQUAL    &trans
+&trans   &mt LEFT_GUI N1  &mt LEFT_ALT N2  &mt LSHIFT N3  &mt LCTRL N4  &mt LA(LS(LC(LGUI))) N5                    &mt LS(LA(LC(LGUI))) N6  &mt RCTRL N7  &mt RSHIFT N8  &mt RIGHT_ALT N9  &mt RGUI N0  &trans
+&trans   &kp BACKSLASH    &none            &none          &none         &none                    &trans    &trans  &none                    &none         &trans         &trans            &trans       &trans
+                          &trans           &trans         &trans        &trans                   &trans    &trans  &mo 3                    &trans        &trans         &trans
             >;
 
             sensor-bindings =
@@ -130,11 +130,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR    &none         &none         &none         &none         &none                       &none     &none      &none      &none      &none    &none
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &tog 4                      &none     &kp PG_UP  &kp PG_DN  &none      &none    &none
-&none         &kp LCMD      &kp LEFT_ALT  &kp LSHFT     &kp LCTRL     &kp CLCK                    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp DEL  &kp BSPC
-&none         &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &none     &none     &none   &none     &none      &none      &none      &none    &none
-                            &none         &none         &trans        &mo 3     &trans    &trans  &none     &trans     &none      &none
+&bt BT_CLR         &none         &none         &none         &none         &none                                   &none     &none      &none      &none      &none    &none
+&bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &tog 4                                  &none     &kp PG_UP  &kp PG_DN  &none      &none    &none
+&kp LS(LA(LCTRL))  &kp LCMD      &kp LEFT_ALT  &kp LSHFT     &kp LCTRL     &kp LS(LA(LC(LGUI)))                    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp DEL  &kp BSPC
+&none              &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &none                 &none     &none   &none     &none      &none      &none      &none    &none
+                                 &none         &none         &trans        &mo 3                 &trans    &trans  &none     &trans     &none      &none
             >;
 
             sensor-bindings =
